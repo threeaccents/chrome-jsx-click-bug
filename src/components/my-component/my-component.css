@@ -1,0 +1,12 @@
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 400px;
+    max-width: 100vw;
+    height: 250px;
+    padding: 1.25rem;
+    background: #ddd;
+}

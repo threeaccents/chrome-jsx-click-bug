@@ -1,0 +1,62 @@
+.vg-select {
+  position: relative;
+}
+
+input {
+  width: 100%;
+  height: 46px;
+  padding-left: 15px;
+  background: #fff;
+  border: solid 1px #ccc;;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus {
+  border: solid 1px blue;
+}
+
+.options {
+    position: absolute;
+    display: none;
+    background: white;
+    box-shadow: var(--primary-box-shadow);
+    width: 100%;
+    z-index: 9;
+    overflow-y: auto;
+    max-height: 250px;
+}
+
+.options.open {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-item {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    min-height: 35px;
+    padding-left: 15px;
+    cursor: pointer;
+    font-size: 13px;
+    z-index: 99;
+}
+
+.option-item.disabled {
+  opacity: .5;
+}
+
+.option-item:hover {
+    background: #e6f7ff;
+}
+
+::placeholder{
+  color: #bfbfbf;
+  font-size: 14px;
+}
